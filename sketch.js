@@ -1,8 +1,7 @@
 let data = [];
-let FILES = ["Data/alittlelight.json","Data/allthebrightplaces.json",
-	"Data/analects.json","Data/bible.json","Data/hanfeizi.json",
-	"Data/interstellar.json","Data/laozi.json","Data/mengzi.json","Data/mozi.json",
-	"Data/thefaultinourstars.json","Data/titanic.json","Data/words.json","Data/xunzi.json",
+let FILES = [	"Data/analects.json","Data/hanfeizi.json",
+	"Data/laozi.json","Data/mengzi.json","Data/mozi.json",
+	"Data/xunzi.json",
 	"Data/zhuangzi.json"]
 
 let emotions = ["fear","trust","surprise","positive","negative","sadness","joy","anticipation"];
@@ -360,7 +359,6 @@ function mySelectEvent() {
 }
 
 function findChord() {
-	console.log(topemotion);
 	switch (topemotion) {
 		case 'positive':
 		chord = random([chords[0],chords[1]])
@@ -400,7 +398,6 @@ function drawCirc() {
 	if (mode ==2 && ax < cx) {
 		ax +=.2;
 	}
-	console.log(ax)
 	circle(ax,cy,10)
 	
 }
