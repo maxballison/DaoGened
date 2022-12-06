@@ -360,7 +360,6 @@ function mySelectEvent() {
 }
 
 function findChord() {
-	console.log(topemotion);
 	switch (topemotion) {
 		case 'positive':
 		chord = random([chords[0],chords[1]])
@@ -400,7 +399,6 @@ function drawCirc() {
 	if (mode ==2 && ax < cx) {
 		ax +=.2;
 	}
-	console.log(ax)
 	circle(ax,cy,10)
 	
 }
